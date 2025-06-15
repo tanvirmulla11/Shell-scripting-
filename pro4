@@ -1,0 +1,25 @@
+#!/bin/bash
+
+echo "=== For Loop Example ==="
+for i in 1 2 3 4 5
+do
+  echo "Number is: $i"
+done
+
+echo ""
+echo "=== While Loop Example ==="
+count=1
+while [ $count -le 5 ]
+do
+  echo "Count is: $count"
+  ((count++))
+done
+
+echo ""
+echo "=== Until Loop Example ==="
+num=1
+until [ $num -gt 5 ]
+do
+  echo "Until loop number: $num"
+  ((num++))
+done
