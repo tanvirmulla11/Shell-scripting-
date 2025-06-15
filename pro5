@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Define the function
+add_numbers() {
+  sum=$(( $1 + $2 ))
+  echo "The sum of $1 and $2 is: $sum"
+}
+
+# Call the function
+add_numbers 10 25
