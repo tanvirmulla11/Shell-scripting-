@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Declare a string
+thought="I will write clean code today"
+
+echo "Morning thought: $thought"
+
+# Check length
+echo "Characters in thought: ${#thought}"
+
+# Replace 'clean' with 'messy'
+thought=${thought/clean/messy}
+echo "Reality hits: $thought"
+
+# Append funny truth
+thought="$thought (but it works!)"
+echo "Final version: $thought"
