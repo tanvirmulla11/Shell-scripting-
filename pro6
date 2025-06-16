@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Funny array
+struggles=("Debugging" "Spelling 'suddenly' right" "Stack Overflow tabs" "Coffee overdose" "Forgot to push to GitHub")
+
+# Print them with a loop
+echo "Here are some daily developer struggles:"
+
+for item in "${struggles[@]}"
+do
+  echo "- $item"
+done
