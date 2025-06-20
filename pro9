@@ -1,0 +1,10 @@
+#!/bin/bash
+
+for i in {1..5}
+do
+  echo "Number: $i"
+  if [ "$i" -eq 3 ]; then
+    echo "Breaking the loop at $i"
+    break
+  fi
+done
