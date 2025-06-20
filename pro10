@@ -1,0 +1,13 @@
+#!/bin/bash
+
+count=0
+
+while [ $count -lt 5 ]
+do
+  ((count++))
+  if [ $count -eq 3 ]; then
+    echo "Skipping count $count"
+    continue
+  fi
+  echo "Count: $count"
+done
