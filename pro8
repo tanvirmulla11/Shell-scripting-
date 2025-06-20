@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Define a funny function
+make_tea() {
+  echo "🫖 Starting tea protocol..."
+  echo "Boiling water... 💧🔥"
+  sleep 1
+  echo "Adding tea leaves 🍃"
+  sleep 1
+  echo "Steeping... please wait patiently 😌"
+  sleep 2
+  echo "Pouring into cup ☕"
+  echo "Tea is ready! Drink or face developer burnout 😵‍💫"
+}
+
+# Call the function
+make_tea
+
+# Bonus: Check mood of the code (completely random, just for fun)
+check_mood() {
+  moods=("Happy 😊" "Buggy 🐞" "Lazy 😴" "Hungry 🍕" "Confused 🤯")
+  mood=${moods[$RANDOM % ${#moods[@]}]}
+  echo "Your script's current mood is: $mood"
+}
+
+check_mood
