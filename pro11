@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# File to work on
+filename="myfile.txt"
+
+# 1. Create the file
+echo "Creating file..."
+touch $filename
+
+# 2. Write some text into the file
+echo "This is a shell scripting demo." > $filename
+
+# 3. Display the content
+echo "Displaying file content:"
+cat $filename
+
+# 4. Append more text
+echo "Appending more content..."
+echo "Shell scripting is useful!" >> $filename
+
+# 5. Count number of lines, words, and characters
+echo "File statistics:"
+wc $filename
+
+# 6. Delete the file
+echo "Deleting the file..."
+rm $filename
+
+echo "Operation completed."
