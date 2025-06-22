@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Define two strings
+str1="Hello"
+str2="World"
+
+# 1. Concatenate strings
+concat="$str1 $str2"
+echo "Concatenated String: $concat"
+
+# 2. String Length
+echo "Length of str1: ${#str1}"
+echo "Length of str2: ${#str2}"
+
+# 3. Substring Extraction
+sub=${concat:6:5}  # Start at index 6, length 5
+echo "Extracted Substring: $sub"
+
+# 4. String Comparison
+if [ "$str1" == "$str2" ]; then
+  echo "Strings are equal"
+else
+  echo "Strings are not equal"
+fi
+
+# 5. Replace part of string (non-POSIX, works in bash)
+new_str=${concat/World/Universe}
+echo "After Replacement: $new_str"
