@@ -1,0 +1,18 @@
+| Expression                    | Syntax                 | Example / Output                |
+| --------------------------------- | -------------------------- | ----------------------------------- |
+| 1. Assignment                 | `str="Hello"`              | Assigns `Hello` to `str`            |
+| 2. Length                     | `${#str}`                  | Returns `5` if `str="Hello"`        |
+| 3. Substring                  | `${str:0:3}`               | Extracts `Hel`                      |
+| 4. Replace (first)            | `${str/old/new}`           | `"Hi world"` → `"Hi Bash"`          |
+| 5. Replace (all)              | `${str//old/new}`          | `"apple apple"` → `"orange orange"` |
+| 6. Concatenation              | `"$str1 $str2"`            | `"Hello" "World"` → `"Hello World"` |
+| 7. Comparison                 | `[ "$a" = "$b" ]`          | Checks equality                     |
+| 8. Empty check                | `[ -z "$str" ]`            | True if string is empty             |
+| 9. Not Empty                  | `[ -n "$str" ]`            | True if string is not empty         |
+| 10. Contains                  | `[[ "$str" == *"text"* ]]` | Checks if substring exists          |
+| 11. Lowercase (Bash 4+)       | `${str,,}`                 | `"HELLO"` → `"hello"`               |
+| 12. Uppercase (Bash 4+)       | `${str^^}`                 | `"hello"` → `"HELLO"`               |
+| 13. Remove from front (short) | `${str#*.}`                | `"file.tar.gz"` → `"tar.gz"`        |
+| 14. Remove from front (long)  | `${str##*.}`               | `"file.tar.gz"` → `"gz"`            |
+| 15. Remove from end (short)   | `${str%.*}`                | `"file.tar.gz"` → `"file.tar"`      |
+| 16. Remove from end (long)    | `${str%%.*}`               | `"file.tar.gz"` → `"file"`          |
